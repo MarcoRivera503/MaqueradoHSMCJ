@@ -1,0 +1,24 @@
+#img{
+    background-image:url(../Imagenes/Bienvenida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contenedor{
+    font-family: 100% Arial;
+}
+#log{
+    background-image: linear-gradient(90deg, #aed0ec 0, #9db9f2 50%, #7e8fb3 100%);
+    height: 100vh;
+    box-shadow: -4px 5px 20px rgb(126, 119, 119);
+    padding-right: 5%;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+p{
+    font-size: 16px;
+    text-align: center;
+}
+#inicio{
+    background-color: rgb(62, 168, 235);
+    color: white;
+}

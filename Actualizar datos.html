@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <title>Hello, world!</title>
+    <!--css propio-->
+    <link href="Estilos/Actualizar datos.css" rel="stylesheet" type="text/css">
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="row" id="contenedor">
+        <h3>ACTUALIZAR DATOS</h3>
+        <br>
+        <div id="col1">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-xl-2"><label>Nombre religioso:</label></div>
+                <div class="col-sm-12 col-md-7 col-xl-7"><input type="text" class="form-control"></div>
+                <div class="col-sm-12 col-md-2 col-xl-3"><input type="submit" value="BUSCAR" class="btn"></div>
+            </div>
+            <br>
+            <div class="tabla">
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre religioso</th>
+                            <th scope="col">Nombre civil</th>
+                            <th scope="col">Nacionalidad</th>
+                            <th scope="col">Teléfono familiar</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Mark</td>
+                            <td>
+                                <button type="button" class="btnEditar" data-bs-toggle="modal" data-bs-target="#ModalEditar">
+                                    <i class="bi bi-pen"></i>
+                                </button>
+                                <div class="modal fade" id="ModalEditar" tabindex="-1" aria-labelledby="ModalEditarLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog" id="modaledit">
+                                        <div class="modal-content" id="modaledit">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="ModalEditarLabel">Editar datos</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" >
+                                                <label for="nombreR">Nombre religioso:</label><input type="text" id="nombreR" class="inpT"><br>
+                <label for="nombreS">Nombre civil:</label><input type="text" id="nombreS" class="inpT"><br>
+                <label for="ln">Lugar de nacimiento:</label><input type="text" id="ln" class="inpT"><br>
+                <label for="fn">Fecha de nacimiento:</label><input type="date" id="fn" class="inpN"><br>
+                <label for="na">Nacionalidad:</label>
+                <select name="" id="na" class="inpN">
+                    <option value="">Seleccionar</option>
+                    <option value="">El Salvador</option>
+                    <option value="">Guatemala</option>
+                </select><br>
+                <label for="edad">Edad:</label><input type="number" id="edad" class="inpN"><br>
+                <h6>Documentos</h6><br>
+                <label for="nDoc">N° de documento:</label><input type="text" id="nDoc" class="inpT"><br>
+                Fecha de vencimiento:
+                <input type="date" id="fDoc" class="inpN"><br><br>
+                <label for="nPas">N° de pasaporte:</label><input type="text" id="nPas" class="inpT"><br>
+                Fecha de vencimiento:
+                <input type="date" id="fPas" class="inpN"><br><br>
+                <label for="licC">Licencia de conducir:</label><input type="text" id="licC" class="inpT"><br>
+                Fecha de vencimiento:
+                <input type="date" id="fLic" class="inpN"><br><br><br>
+            </div>
+            <div class="col-6" id="col2">
+                <div class="row">
+                    <h6>Foto de perfil:</h6>
+                    <br>
+                    <img id="imagenPrevisualizacion" src="">
+                    <br>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <input type="file" id="seleccionArchivos" accept="image/*" class="form-control">
+                    </div>
+                    <div class="col">
+                        <button class="btn">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <br><br>
+                <label for="rec">Recidencia actual:</label><input type="text" id="rec" class="inpT2"><br>
+                <label for="licC">Teléfono familiar:</label><input type="text" id="licC" class="inpT2">
+                <br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btnCancelarM" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btnGuardarM">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btnEliminar" data-bs-toggle="modal" data-bs-target="#ModalEliminar">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                                <div class="modal fade" id="ModalEliminar" tabindex="-1" aria-labelledby="ModalEliminarLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="ModalEliminarLabel">Eliminar datos</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label>¿Esta segura de eliminar a este usuario de manera permanente?</label>
+                                                <h6>NOTA: al hacer esto no podrá revertir los cambios</h6>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btnGuardarM" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btnCancelarM">Eliminar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+</body>
+</html>

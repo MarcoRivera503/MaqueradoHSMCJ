@@ -1,0 +1,39 @@
+body{
+    background-color: lightgray;
+}
+h3{
+    text-align: center;
+    margin-bottom: 7px;
+}
+.tabla{
+    height: 250px;
+	overflow-y: scroll;
+}
+#col1{
+    padding-left: 70px;
+    padding-bottom: 0px;
+}
+#col2{
+    padding-left: 70px;
+    padding-bottom: 0px;
+}
+.borde{
+    box-shadow: -2px 3px 20px rgb(46, 46, 46);
+    padding: 12px;
+}
+.btnGuardar{
+    border: rgb(138, 138, 138) solid 1px;
+    height: 35px;
+    width: 250px;
+    border-radius: 3px;
+    background-color: rgb(49, 184, 230);
+    
+}
+.btnCancelar{
+    border: rgb(138, 138, 138) solid 1px;
+    height: 35px;
+    width: 250px;
+    border-radius: 3px;
+    background-color: salmon;
+    
+}
