@@ -23,19 +23,19 @@
         <br>
         <div id="col1">
             <div class="row">
-                <div class="col-4"><label>¿Padece alguna enfermedad?</label></div>
-                <div class="col-1"><input type="radio" id="enfSi" name="enfSi"><label for="enfSi">Si</label></div>
-                <div class="col-1"><input type="radio" id="enfNo" name="enfNo"><label for="enfNo">No</label></div>
+                <div class="col-xs-6 col-xl-4"><!--xl-4--><label>¿Padece alguna enfermedad?</label></div>
+                <div class="col-sm-6 col-xl-1"><input type="radio" id="enfSi" name="enfSi"><label for="enfSi">Si</label></div>
+                <div class="col-sm-6 col-xl-1"><input type="radio" id="enfNo" name="enfNo"><label for="enfNo">No</label></div>
             </div>
             <br>
             <div class="row">
-                <div class="col-4"><label>¿Cuales enfermedades?</label></div>
-                <div class="col"><textarea type="text" rows="2" class="form-control"></textarea></div>
+                <div class="col-xs-6 col-xl-4"><!--xl-4--><label>¿Cuales enfermedades?</label></div>
+                <div class="col-xs-6 col-xl"><textarea type="text" rows="2" class="form-control"></textarea></div>
             </div>
             <hr>
             <div class="row">
-                <div class="col-4"><label>Tipo de sangre:</label></div>
-                <div class="col-3">
+                <div class="col-xs-6 col-xl-4"><!--xl-4--><label>Tipo de sangre:</label></div>
+                <div class="col-xs-6 col-xl-3"><!--xl-3-->
                     <select class="form-control">
                         <option value="">Seleccionar</option>
                         <option value="">A</option>
@@ -45,8 +45,8 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-4"><label>Factor RH:</label></div>
-                <div class="col-3">
+                <div class="col-sm-6 col-xl-4"><!--xl-4--><label>Factor RH:</label></div>
+                <div class="col-xs-6 col-xl-3"><!--xl-3-->
                     <select class="form-control">
                         <option value="">Seleccionar</option>
                         <option value="">+</option>
@@ -57,15 +57,28 @@
             <hr>
             <div class="row">
                 <div class="row">
-                    <div class="col-4"><label>¿Padece algun tipo de alergia?</label></div>
-                    <div class="col-1"><input type="radio" id="alSi" name="alSi"><label for="alSi">Si</label></div>
-                    <div class="col-1"><input type="radio" id="alNo" name="alNo"><label for="alNo">No</label></div>
+                    <div class="col-xs-6 col-xl-4"><!--xl-4--><label>¿Padece algun tipo de alergia?</label></div>
+                    <div class="col-sm-6 col-xl-1"><input type="radio" id="alSi" name="alSi"><label for="alSi">Si</label></div>
+                    <div class="col-s,-6 col-xl-1"><input type="radio" id="alNo" name="alNo"><label for="alNo">No</label></div>
                 </div>
             </div>
             <br>
             <div class="row">
-                <div class="col-4"><label>Espesifique:</label></div>
-                <div class="col"><textarea type="text" rows="2" class="form-control"></textarea></div>
+                <div class="col-xs-6 col-xl-4"><!--xl-4--><label>Espesifique:</label></div>
+                <div class="col-xs-6 col-xl"><textarea type="text" rows="2" class="form-control"></textarea></div>
+            </div>
+            <br>
+            <div class="row" id="botones">
+                <div class="col-xs-12 col-sm-6 col-xl-6">
+                    <button class="btnGuardar">
+                        <i class="bi bi-inboxes-fill"></i></i> GUARDAR FICHA
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-xl-6">
+                    <button class="btnCancelar">
+                        <i class="bi bi-x-square-fill"></i> CERRAR FORMULARIO
+                    </button>
+                </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

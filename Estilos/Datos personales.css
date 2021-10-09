@@ -1,4 +1,4 @@
-#contenedor{
+body{
     background-color: lightgray;
 }
 h3{
@@ -15,30 +15,6 @@ h3{
 }
 label{
 padding-bottom: 15px;
-}
-.inpT{
-    border: none;
-    height: 35px;
-    width: 300px;
-    border-radius: 3px;
-    position: absolute;
-    left: 250px;
-}
-.inpN{
-    border: none;
-    height: 35px;
-    width: 200px;
-    border-radius: 3px;
-    position: absolute;
-    left: 250px;
-}
-.inpT2{
-    border: none;
-    height: 35px;
-    width: 300px;
-    border-radius: 3px;
-    position: relative;
-    float: right;
 }
 .btn{
     border: rgb(138, 138, 138) solid 1px;

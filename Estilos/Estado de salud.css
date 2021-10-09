@@ -9,3 +9,22 @@ h3{
     padding: 70px;
     padding-bottom: 0px;
 }
+.btnGuardar{
+    border: rgb(138, 138, 138) solid 1px;
+    height: 35px;
+    width: 250px;
+    border-radius: 3px;
+    background-color: rgb(49, 184, 230);
+    
+}
+.btnCancelar{
+    border: rgb(138, 138, 138) solid 1px;
+    height: 35px;
+    width: 250px;
+    border-radius: 3px;
+    background-color: salmon;
+    
+}
+#botones{
+    float: right;
+}
